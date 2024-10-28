@@ -1,6 +1,6 @@
 ---
 layout : qna
-title: geustbook
+title: Geustbook
 icon: fa-solid fa-book
 order: 4
 comments: true

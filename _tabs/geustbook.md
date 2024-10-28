@@ -1,7 +1,7 @@
 ---
 layout : qna
-title: QnA
-icon: fa-solid fa-circle-question
+title: geustbook
+icon: fa-solid fa-book
 order: 4
 comments: true
 toc: true

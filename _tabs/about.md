@@ -31,7 +31,7 @@ This is jinphil Choi, who are learning **DB, Security etc.** in university
 
 
 ### <u>Study History</u>
-- [x] Goethe-Zertifikat A1 <sup>language</sup>
-- [x] [The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert](https://www.udemy.com/course/best-mysql-k/?couponCode=KEEPLEARNING) <sup>udemy</sup>
-- [ ] Goethe-Zertifikat A2 <sup>language</sup>
+- [x] Goethe-Zertifikat A1 <sup>certificate</sup>
+- [x] [The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert](https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/?couponCode=24T6MT102824) <sup>udemy</sup>
+- [ ] Goethe-Zertifikat A2 <sup>certificate</sup>
 <br>

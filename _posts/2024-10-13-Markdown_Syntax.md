@@ -205,7 +205,7 @@ This is an H2
 
 ### <u>목록(Lists)</u>
 
-#### 순서가 있는 리스트(ordered Lists)
+#### 순서가 있는 리스트(Ordered Lists)
 - 말 그대로 순서를 볼 수 있는 리스트입니다.
 - `숫자.` 로 시작합니다.
 

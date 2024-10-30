@@ -14,7 +14,7 @@ image:
   alt: Markdown
 ---
 
-> Markdown 문법에 대해 정리한 글입니다. ~~사실 제가 보려고 정리한 글입니다.~~
+> Markdown 문법에 대해 정리한 글입니다. ~~사실 제가 보려고 정리한 글입니다.~~ 
 {: .prompt-info }
 
 ## About Markdown

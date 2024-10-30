@@ -48,7 +48,7 @@ _Markdown in VSCode_
 > Markdown 문법은 HTML 태그로 변화되어 우리에게 보여지지만, 모든 HTML 태그를 지원하지 않고 일부만 지원하므로 플랫폼과 태그를 꼭 확인해보세요. 또, 이 글은 깃허브 블로그에서 작성되므로 github CSS를 따른다는 점 주의해주세요.
 {: .prompt-warning }
 
-### <u>제목 (Header)</u>
+### <u>제목(Header)</u>
 - Markdown에서 **제목**을 표현하는 방법입니다. 
 - `<H1>` 부터 `<H6>` 까지 나타낼 수 있습니다.
 - H1은 `===` 로도 만들 수 있습니다.
@@ -70,7 +70,7 @@ This is an H2
 
 <br>
 
-### <u>글자 스타일 (Style)</u>
+### <u>글자 스타일(Style)</u>
 
 #### 글씨체(Font)
 - Markdown에서는 글자 강조, 이탈릭체, 밑줄, 취소선을 다음과 같이 표현할 수 있습니다.
@@ -110,7 +110,7 @@ This is an H2
 
 <br>
 
-### <u>수평선 (Horizontal Rules)</u> 
+### <u>수평선(Horizontal Rules)</u> 
 - 구분선은 `***` 이나 `---` 으로 출력할 수 있습니다.
 
 ```markdown
@@ -123,7 +123,7 @@ This is an H2
 
 <br>
 
-### <u>이스케이프 (Backslash Escape)</u> 
+### <u>이스케이프(Backslash Escape)</u> 
 - Markdown에서 사용중인 기호를 출력하기 위해서는 `\` 를 이용하여 출력할 수 있습니다.
 
 ```markdown
@@ -137,7 +137,7 @@ This is an H2
 
 <br>
 
-### <u>체크 리스트 (Check Lists)</u>
+### <u>체크 리스트(Check Lists)</u>
 - 앞에 `[X]` 를 쓰면 완료된 리스트를 표현할 수 있습니다.
 - 앞에 `[ ]` 를 쓰면 미완료된 리스트를 표현할 수 있습니다.
 
@@ -152,7 +152,7 @@ This is an H2
 
 <br>
 
-### <u>이모지 출력 (Print Emoji)</u>
+### <u>이모지 출력(Print Emoji)</u>
 - Windows : `Win` + `.`
 - Mac : `Command` + `Control` + `Space` 로 하거나 `Fn` 단일키
 
@@ -160,10 +160,10 @@ This is an H2
 
 <br>
 
-### <u>줄바꿈 (Change Line)</u>
+### <u>줄바꿈(Change Line)</u>
 - 2가지 방법이 존재합니다. 더 편한 방법을 사용하세요. 저는 `<br>` 을 더 많이 사용하고 있습니다.
 
-#### HTML 태그
+#### HTML 태그(HTML Tag)
 -  HTML 태그인 `<br>` 태그를 사용합니다.
 
 ```markdown
@@ -173,7 +173,7 @@ This is an H2
 
 <br>
 
-#### 공백 줄바꿈
+#### 공백 줄바꿈(Space)
 - `Space 2번 + Enter` 사용합니다.
 
 ```markdown
@@ -184,7 +184,7 @@ This is an H2
 
 <br>
 
-### <u>인용문 (Blockquotes)</u>
+### <u>인용문(Blockquotes)</u>
 - 본문에 인용구를 삽입할 때 `>` 를 이용해 작성합니다.
 - `>` 의 개수는 최대 3개까지 사용해 중첩 인용문을 사용할 수 있습니다.   
 - 인용문 안에는 리스트나 제목 등을 삽입할 수 있습니다.
@@ -203,7 +203,7 @@ This is an H2
 
 <br>
 
-### <u>목록 (Lists)</u>
+### <u>목록(Lists)</u>
 
 #### 순서가 있는 리스트(ordered Lists)
 - 말 그대로 순서를 볼 수 있는 리스트입니다.
@@ -256,7 +256,7 @@ This is an H2
 
 <br>
 
-### <u>인라인 코드 블록 (Inline Code)</u>
+### <u>인라인 코드 블록(Inline Code)</u>
 - `Backtick` 을 양끝에 추가하면 그 부분만 강조한 텍스트를 만들 수 있습니다.
 
 ```markdown
@@ -267,7 +267,7 @@ This is an H2
 
 <br>
 
-### <u>코드 블록 (Code Blocks)</u>
+### <u>코드 블록(Code Blocks)</u>
 - `Backtick` 이나 `~`로 3번 이상 입력 후 사용언어를 명시하면 syntax highlight가 적용됩니다.
 - 코드 블록의 `Backtick` 이나 `~` 의 수는 같아야 합니다.
 - 사용언어를 안적거나 언어가 아닌 단어를 적어도 코드 블록은 생성됩니다.
@@ -294,7 +294,7 @@ $ npm run git
 
 <br>
 
-### <u>링크 (Links)</u>
+### <u>링크(Links)</u>
 
 #### 외부링크(External Link)
 - `<>` 가 없어도 링크로 인식하고 링크 이름도 아래와 같이 변경 가능합니다.
@@ -328,7 +328,7 @@ Google : <https://www.google.com>
 
 <br>
 
-### <u>테이블 (Tables)</u>
+### <u>테이블(Tables)</u>
 
 #### 표(Create Tables)
 - 본문에 표를 삽입할 때 사용합니다.
@@ -388,7 +388,7 @@ C4|C5|C6
 
 <br>
 
-### <u>이미지 (Image)</u>
+### <u>이미지(Image)</u>
 
 #### 이미지 삽입(Insert Image)
 
@@ -438,7 +438,7 @@ C4|C5|C6
 
 <br>
 
-### <u>요약 (Summary)</u>
+### <u>요약(Summary)</u>
 - Markdown은 아니지만 유용하게 사용했던 기억이 있어서 같이 설명합니다.
 - `HTML 태그`를 이용하여 하위 내용을 접거나 펼쳐서 볼 수 있게 만들어줍니다.
 

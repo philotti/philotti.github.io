@@ -328,7 +328,7 @@ Google : <https://www.google.com>
 
 <br>
 
-### <u>테이블(Tables)</u>
+### <u>테이블(Tables)</u> 
 
 #### 표(Create Tables)
 - 본문에 표를 삽입할 때 사용합니다.
@@ -379,7 +379,7 @@ C4|C5|C6
 
 <br>
 
-### <u>주석 (Comments)</u>
+### <u>주석(Comments)</u>
 - `<!-- -->` 를 이용해 주석을 표현할 수 있습니다.
 
 ```markdown

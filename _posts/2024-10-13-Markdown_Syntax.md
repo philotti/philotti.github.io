@@ -37,7 +37,7 @@ Markdown은 일반적인 텍스트 기반의 가벼운 마크업 언어로, 편�
 
 <br>
 
-![Markdown Editor](/assets/post_img/2024-10-13-1.webp)
+![Markdown Editor](/assets/post_img/2024-10-13-1.webp){: width="600"}
 _Markdown in VSCode_
 
 <br>

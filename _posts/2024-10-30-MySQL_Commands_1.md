@@ -11,8 +11,8 @@ math: true
 pin: false
 published: true
 image:
-  path: /assets/post_img/markdown_logo.jpg
-  alt: Markdown
+  path: /assets/post_img/sql_logo.webp
+  alt: MySQL
 ---
 
 > MySQL 기본 명령들과 CRUD 명령들을 정리한 글입니다. 

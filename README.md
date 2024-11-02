@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
 ---
-- My Second github blog <- The previous one was powered by [Minimal Mistakeks](https://github.com/mmistakes/minimal-mistakes)
+- My Second github blog <- The previous one was powered by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes)
 - Powered By [Jekyll Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy)
 - May. 17, 2024 ~~
 

@@ -1,8 +1,8 @@
 ---
 title: "MySQL #1 | 기본 명령에서 CRUD까지"
 author: 'jinjehr'
-date: 2024-10-30 08:09:00 +0900
-last_modified_at: 2024-10-30 23:50:00 +0900
+date: 2024-10-30 20:09:00 +0900
+last_modified_at: 2024-11-03 21:54:00 +0900
 categories: [MySQL, Commands]
 tags: [MySQL, Commands]
 description: MySQL Commands
@@ -19,8 +19,7 @@ image:
 {: .prompt-info }
 
 ## Basic Commands
-데이터 베이스나 테이블을 생성하는 명령들과 그 외의 기본 팁들에 대해 정리한 목차입니다.
-
+데이터 베이스나 테이블을 생성하는 명령들과 그 외의 설정할 때 같이 하면 도움이 되는 기본 팁들에 대해 정리한 목차입니다.
 
 > 이 포스트에서 작성된 데이터베이스는 제가 임의로 만든 cats 데이터베이스입니다.  
 {: .prompt-warning }
@@ -28,7 +27,7 @@ image:
 <br>
 
 ### <u>데이터베이스 만들기(Create Databases)</u>
-- 아래는 각각 데이터베이스를 나열, 생성, 삭제, 사용할 때 사용하는 명령입니다.
+- 아래는 각각 데이터베이스를 `나열` , `생성` , `삭제` , `사용` 할 때 사용하는 명령입니다.
 
 ```sql
 SHOW DATABASES;
@@ -41,8 +40,8 @@ USE 'DB_NAME';
 
 ### <u>테이블 만들기(Create Tables)</u>
 
-- 아래는 각각 테이블을 생성, 삭제, 확인하는 명령입니다.
-- SHOW나 DESC(DESCRIBE)는 테이블의 속성 값등을 확인할 수 있는 명령입니다.
+- 아래는 각각 테이블을 `생성` , `삭제` , `확인` 하는 명령입니다.
+- SHOW나 DESC(DESCRIBE)는 테이블의 `속성` 값등을 확인할 수 있는 명령입니다.
 
 ```sql
 CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE, 'COL2' DATA_TYPE ...);
@@ -59,8 +58,8 @@ DESC 'TABLE_NAME';
 <br>
 
 ### <u>테이블 변경하기(Alter Tables)</u>
-- 데이터베이스에서 기존의 테이블을 유지하면서 원하는 부분만 수정할 수 있는 명령입니다.
-- 아래는 각각 열 추가, 열 이름 변경, 데이터 타입 변경, 열 삭제, 테이블 이름 변경 명령입니다.
+- 데이터베이스에서 기존의 테이블을 유지하면서 원하는 부분만 `수정` 할 수 있는 명령입니다.
+- 아래는 각각 `열 추가` , `열 이름 변경` , `데이터 타입 변경` , `열 삭제` , `테이블 이름 변경` 명령입니다.
 
 ```sql
 ALTER TABLE 'TABLE_NAME' ADD COLUMN 'TO_ADD_COL_NAME' 'DATA_TYPE';
@@ -72,13 +71,13 @@ ALTER TABLE 'TABLE_NAME' RENAME TO 'NEW_TABLE_TYPE';
 
 <br>
 
-### 기본 키(Primary Key)
-- SQL 데이터베이스에는 기본 키외에 고유 키와 외래 키도 존재합니다. ~~이들은 나중에...~~
-- 기본 키가 적용된 열은 테이블 내의 각 행을 고유하게 만드는 열로 볼 수 있습니다.
+### <u>기본 키(Primary Key)</u>
+- SQL 데이터베이스에는 기본 키외에 고유 키와 외래 키도 존재합니다. ~~고유 키와 외래 키는 나중에...~~
+- 기본 키가 적용된 열은 테이블 내의 각 행을 `고유` 하게 만드는 열로 볼 수 있습니다.
 - 즉, SQL 데이터베이스에서 특정 레코드를 유일하게 식별하기 위해 사용되는 키입니다.
 - 기본 키를 삭제하기 전에는 반드시 기본 키가 다른 테이블에서 참조되지 않게 확인을 하고 삭제를 해야 합니다.
 - primary key는 무조건 존재해야하므로 NOT NULL을 안해줘도 NOT NULL를 삽입한 것과 같으므로 안해줘도 됩니다.
-- 아래는 각각 기본 키 생성, 다중 기본 키, 삭제를 설정하는 방법입니다.
+- 아래는 각각 `기본 키 생성` , `다중 기본 키` , `삭제` 를 설정하는 방법입니다.
 
 ```sql
 CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE, 'COL2' DATA_TYPE ..., PRIMARY KEY('COL1'));
@@ -88,8 +87,8 @@ ALTER TABLE 'TABLE_NAME' DROP PRIMARY KEY;
 
 <br>
 
-### AUTO_INCREMENT
-- 자동으로 기본 키의 값을 1부터 올려서 저장해주는 명령입니다.
+### <u>AUTO_INCREMENT</u>
+- `자동으로 기본 키의 값을 1부터 올려서 저장` 해주는 명령입니다.
 
 ```sql
 CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE AUTO_INCREMENT, 'COL2' DATA_TYPE ..., PRIMARY KEY('COL1'));
@@ -97,19 +96,20 @@ CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE AUTO_INCREMENT, 'COL2' DATA_TYPE ...
 
 <br>
 
-### 이스케이프(Escape)
+### <u>이스케이프(Escape)</u>
 - MySQL에서 `'` 와 같은 문자들을 사용할 때에는 앞에 `\`를 붙여서 사용합니다.
-- MySQL에서는 작은 따옴표를 사용하는 것을 추천합니다. 그 이유는 MySQL뿐 아니라 다른 SQL을 지원하는 프로그램에서 SQL을 작성할 때 햇갈리지 않기 위해 모두가 사용하는 작은 따옴표를 추천합니다.
-- 작은따움표 안에 큰따움표가 있는것은 괜찮습니다. 'she said "haha"'
+- MySQL에서는 문자열은 `작은 따옴표`를 사용하는 것을 추천합니다. 그 이유는 MySQL뿐 아니라 다른 SQL을 지원하는 프로그램에서 SQL을 작성할 때 햇갈리지 않기 위해 모두가 사용하는 작은 따옴표를 추천합니다.
+- 작은따움표 안에 큰따움표가 있는것은 괜찮습니다.
 
-```sql
-'She said "haha" and gave Mats\'s phone'
-```
+> Preview :
+>```sql
+>'She said "haha" and gave Mats\'s phone'
+>```
 
 <br>
 
-### DEFAULT
-- 설정해주지 않은 값에 설정한 기본 값을 저장해주는 명령입니다. 
+### <u>DEFAULT</u>
+- 설정해주지 않은 값에 설정한 `기본 값`을 저장해주는 명령입니다. 
 
 > DEFAULT 값이 있다고 그것이 NULL이 아니라고는 할 수 없습니다. INSERT로 NULL값을 따로 넣어줄 수 있기 때문입니다. {: .prompt-warning }
 

@@ -31,12 +31,12 @@ image:
 ### <u>CREATE</u>
 - 데이터베이스에서 행을 `추가` 하는 명령을 의미합니다.
 
-```sql
+```SQL
 INSERT 테이블명 INTO (COL1, COL2 ....) VALUES (VAL1, VAL2 ....);
 ```
 
 > Preview :
-> ```sql
+> ```SQL
 > INSERT INTO cats (name, age) VALUES ('Marco', 11);
 > ```
 
@@ -48,7 +48,7 @@ INSERT 테이블명 INTO (COL1, COL2 ....) VALUES (VAL1, VAL2 ....);
 - 모든열이나 특정열을 조회하거나 `WHERE` 명령을 이용하여 조건 조회를 할 수 있습니다.
 - `AS` 를 사용해 결과의 열에 별명을 설정할 수 있습니다. **테이블의 열 이름을 실제로 변경하는 것은 아닙니다.**
 
-```sql
+```SQL
 SELECT * FROM TABLE_NAME; 
 SELECT COL FROM TABLE_NAME; 
 SELECT COL1, COL2 ... FROM TABLE_NAME;
@@ -57,7 +57,7 @@ SELECT COL AS ALIAS FROM TABLE_NAME;
 ```
 
 > Preview : 
-> ```sql
+> ```SQL
 > SELECT * FROM cats; 
 > SELECT age FROM cats; 
 > SELECT name, breed FROM cats; 
@@ -71,12 +71,12 @@ SELECT COL AS ALIAS FROM TABLE_NAME;
 - 데이터베이스에서 행을 `수정` 하는 명령을 의미합니다.
 - UPDATE는 때론 큰 `실수` 를 범하게 될 수도 있으므로 먼저 `SELECT - WHERE` 명령을 이용해서 업데이트 대상을 먼저 조회한 후 UPDATE를 실행하는 편을 추천합니다.
 
-```sql
+```SQL
 UPDATE COL SET VAL WHERE COND;
 ```
 
 > Preview : 
-> ```sql
+> ```SQL
 > UPDATE cats SET age = 15 WHERE name = 'Mats';
 > ```
 
@@ -91,13 +91,13 @@ UPDATE COL SET VAL WHERE COND;
 - 위의 UPDATE처럼 큰 `실수` 를 범하게 될 수도 있으므로 `SELECT - WHERE` 명령을 이용해서 DELETE 대상을 먼저 조회한 후 DELETE를 실행하는 편을 추천합니다.
 - 아래와 같이 모든열을 삭제하거나 , `WHERE` 명령을 이용하여 조건 삭제를 할 수 있습니다.
 
-```sql
+```SQL
 DELETE FROM TABLE_NAME; 
 DELETE FROM TABLE_NAME WHERE COND; 
 ```
 
 > Preview : 
-> ```sql
+> ```SQL
 > DELETE FROM cats; 
 > DELETE FROM cats WHERE name = 'Roman';
 > ```

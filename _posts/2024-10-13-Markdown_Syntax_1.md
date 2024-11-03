@@ -17,6 +17,8 @@ image:
 > Markdown 문법에 대해 정리한 글입니다. ~~사실 제가 보려고 정리한 글입니다.~~ 
 {: .prompt-info }
 
+---
+
 ## About Markdown
 Markdown은 일반적인 텍스트 기반의 가벼운 마크업 언어로, 편집하기 쉬운 목적으로 만들어져 다양한 문서 작성을 위한 형식으로 사용되고 있습니다.  개발쪽에 관심이 있거나 몸을 담고 계신 분들은 `README.md` 파일과 같은 md 파일들을 볼 수 있을 것입니다. 바로 이 파일과 같은 것들이 Markdown을 이용해서 만든 문서입니다. 주변에서 정말 많이 볼 수 있고 사용하기도 편해서 많은 인지도를 가지고 있습니다.
 
@@ -37,7 +39,7 @@ Markdown은 일반적인 텍스트 기반의 가벼운 마크업 언어로, 편�
 
 <br>
 
-![Markdown Editor](/assets/post_img/2024-10-13-1.webp){: width="600"}
+![Markdown Editor](/assets/post_img/2024-10-13-1.webp){: width="800"}
 _Markdown in VSCode_
 
 <br>

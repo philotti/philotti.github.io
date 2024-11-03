@@ -26,27 +26,34 @@ image:
 
 <br>
 
-### <u>데이터베이스 만들기(Create Databases)</u>
+### <u>DB 생성(Create Databases)</u>
 - 아래는 각각 데이터베이스를 `나열` , `생성` , `삭제` , `사용` 할 때 사용하는 명령입니다.
 
 ```sql
 SHOW DATABASES;
+
 CREATE DATABASE 'DB_NAME';
+
 DROP DATABASE 'DB_NAME';
+
 USE 'DB_NAME';
 ```
 
 <br>
 
-### <u>테이블 만들기(Create Tables)</u>
+### <u>테이블 생성(Create Tables)</u>
 
 - 아래는 각각 테이블을 `생성` , `삭제` , `확인` 하는 명령입니다.
 - SHOW나 DESC(DESCRIBE)는 테이블의 `속성` 값등을 확인할 수 있는 명령입니다.
 
 ```sql
 CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE, 'COL2' DATA_TYPE ...);
+
 DROP TABLE 'TABLE_NAME';
+
 SHOW TABLES;
+
+
 DESC 'TABLE_NAME';
 ```
 > Preview :
@@ -57,16 +64,25 @@ DESC 'TABLE_NAME';
 
 <br>
 
-### <u>테이블 변경하기(Alter Tables)</u>
+### <u>테이블 변경(Alter Tables)</u>
 - 데이터베이스에서 기존의 테이블을 유지하면서 원하는 부분만 `수정` 할 수 있는 명령입니다.
 - 아래는 각각 `열 추가` , `열 이름 변경` , `데이터 타입 변경` , `열 삭제` , `테이블 이름 변경` 명령입니다.
 
 ```sql
-ALTER TABLE 'TABLE_NAME' ADD COLUMN 'TO_ADD_COL_NAME' 'DATA_TYPE';
-ALTER TABLE 'TABLE_NAME' RENAME COLUMN 'ORIGINAL_NAME' TO 'TO_CHANGE_COL_NAME';
-ALTER TABLE 'TABLE_NAME' MODIFY COLUMN 'COL_NAME' 'NEW_DATA_TYPE';
-ALTER TABLE 'TABLE_NAME' DROP COLUMN 'COL_NAME';
-ALTER TABLE 'TABLE_NAME' RENAME TO 'NEW_TABLE_TYPE';
+ALTER TABLE 'TABLE_NAME' 
+ADD COLUMN 'TO_ADD_COL_NAME' 'DATA_TYPE';
+
+ALTER TABLE 'TABLE_NAME' 
+RENAME COLUMN 'ORIGINAL_NAME' TO 'TO_CHANGE_COL_NAME';
+
+ALTER TABLE 'TABLE_NAME' 
+MODIFY COLUMN 'COL_NAME' 'NEW_DATA_TYPE';
+
+ALTER TABLE 'TABLE_NAME' 
+DROP COLUMN 'COL_NAME';
+
+ALTER TABLE 'TABLE_NAME' 
+RENAME TO 'NEW_TABLE_TYPE';
 ```
 
 <br>
@@ -81,17 +97,10 @@ ALTER TABLE 'TABLE_NAME' RENAME TO 'NEW_TABLE_TYPE';
 
 ```sql
 CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE, 'COL2' DATA_TYPE ..., PRIMARY KEY('COL1'));
+
 CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE, 'COL2' DATA_TYPE ..., PRIMARY KEY('COL1', 'COL2'));
+
 ALTER TABLE 'TABLE_NAME' DROP PRIMARY KEY;
-```
-
-<br>
-
-### <u>AUTO_INCREMENT</u>
-- `자동으로 기본 키의 값을 1부터 올려서 저장` 해주는 명령입니다.
-
-```sql
-CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE AUTO_INCREMENT, 'COL2' DATA_TYPE ..., PRIMARY KEY('COL1'));
 ```
 
 <br>
@@ -111,7 +120,8 @@ CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE AUTO_INCREMENT, 'COL2' DATA_TYPE ...
 ### <u>DEFAULT</u>
 - 설정해주지 않은 값에 설정한 `기본 값`을 저장해주는 명령입니다. 
 
-> DEFAULT 값이 있다고 그것이 NULL이 아니라고는 할 수 없습니다. INSERT로 NULL값을 따로 넣어줄 수 있기 때문입니다. {: .prompt-warning }
+> DEFAULT 값이 있다고 그것이 NULL이 아니라고는 할 수 없습니다. INSERT로 NULL값을 따로 넣어줄 수 있기 때문입니다.
+{: .prompt-warning }
 
 > Preview :
 > ```sql
@@ -121,7 +131,18 @@ CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE AUTO_INCREMENT, 'COL2' DATA_TYPE ...
 > ```
 
 <br>
+
+### <u>AUTO_INCREMENT</u>
+- `자동으로 기본 키의 값을 1부터 올려서 저장` 해주는 명령입니다.
+
+```sql
+CREATE TABLE 'TABLE_NAME' ('COL1' DATA_TYPE AUTO_INCREMENT, 'COL2' DATA_TYPE ..., PRIMARY KEY('COL1'));
+```
+
 <br>
+<br>
+
+---
 
 ## CRUD Commands
 데이터베이스 개발이나 관리에 관심이 있으신 저와 같은 분들이라면 누구나 `CRUD` 작업을 다루었을 것입니다. `CRUD` 는 `CREATE` , `READ` , `UPDATE` , `DELETE` 의 약자로, 데이터에 대한 4가지 기본 작업인 `삽입` , `검색` , `수정` , `삭제` 로 구성되어 있습니다. 일반적으로 데이터는 현재 가장 많이 사용되는 관계형 데이터베이스에 저장되고 사용되고 있습니다. SQL에서 CRUD 명령은 데이터베이스 작업을 수월하게 도와줍니다. 
@@ -150,18 +171,26 @@ INSERT 'TABLE_NAME' INTO ('COL1', 'COL2' ....) VALUES ('VAL1', 'VAL2' ....);
 
 ```sql
 SELECT * FROM 'TABLE_NAME'; 
+
 SELECT 'COL' FROM 'TABLE_NAME'; 
+
 SELECT 'COL1', 'COL2' ... FROM 'TABLE_NAME';
+
 SELECT * FROM 'TABLE_NAME' WHERE 'COND';  
+
 SELECT 'COL' AS 'ALIAS' FROM 'TABLE_NAME'; 
 ```
 
 > Preview : 
 > ```sql
 > SELECT * FROM cats;
+>
 > SELECT age FROM cats; 
+>
 > SELECT name, breed FROM cats; 
+>
 > SELECT * FROM cats WHERE age = 4;
+>
 > SELECT cat_id AS id, name FROM cats; 
 > ```
 
@@ -193,12 +222,14 @@ UPDATE 'COL' SET 'VAL' WHERE 'COND';
 
 ```sql
 DELETE FROM 'TABLE_NAME'; 
+
 DELETE FROM 'TABLE_NAME' WHERE 'COND'; 
 ```
 
 > Preview : 
 > ```sql
 > DELETE FROM cats; 
+>
 > DELETE FROM cats WHERE name = 'Roman';
 > ```
 

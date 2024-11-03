@@ -454,5 +454,5 @@ C4|C5|C6
 <br>
 
 ## Reference
-- [Basic Syntax : The Markdown elements outlined in the original design document.](https://www.markdownguide.org/basic-syntax/) <sup>site</sup>
+- [Basic Syntax : The Markdown elements outlined in the original design document](https://www.markdownguide.org/basic-syntax/) <sup>site</sup>
 - [Support Language List in Markdown](https://docs.readme.com/rdmd/docs/code-blocks)<sup>site</sup>

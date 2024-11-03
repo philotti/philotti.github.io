@@ -43,6 +43,8 @@ _Markdown in VSCode_
 <br>
 <br>
 
+---
+
 ## Syntax
 
 > Markdown 문법은 HTML 태그로 변화되어 우리에게 보여지지만, 모든 HTML 태그를 지원하지 않고 일부만 지원하므로 플랫폼과 태그를 꼭 확인해보세요. 또, 이 글은 깃허브 블로그에서 작성되므로 github CSS를 따른다는 점 주의해주세요.
@@ -452,6 +454,9 @@ C4|C5|C6
 
 
 <br>
+<br>
+
+---
 
 ## Reference
 - [Basic Syntax : The Markdown elements outlined in the original design document](https://www.markdownguide.org/basic-syntax/) <sup>site</sup>

@@ -53,7 +53,6 @@ DROP TABLE 'TABLE_NAME';
 
 SHOW TABLES;
 
-
 DESC 'TABLE_NAME';
 ```
 > Preview :
@@ -70,19 +69,19 @@ DESC 'TABLE_NAME';
 
 ```sql
 ALTER TABLE 'TABLE_NAME' 
-ADD COLUMN 'TO_ADD_COL_NAME' 'DATA_TYPE';
+ADD_COLUMN 'TO_ADD_COL_NAME''DATA_TYPE';
 
-ALTER TABLE 'TABLE_NAME' 
-RENAME COLUMN 'ORIGINAL_NAME' TO 'TO_CHANGE_COL_NAME';
+ALTER TABLE 'TABLE_NAME'_ 
+RENAME_COLUMN 'ORIGINAL_NAME'TO'TO_CHANGE_COL_NAME';
 
-ALTER TABLE 'TABLE_NAME' 
-MODIFY COLUMN 'COL_NAME' 'NEW_DATA_TYPE';
+ALTER TABLE 'TABLE_NAME'
+MODIFY_COLUMN 'COL_NAME' 'NEW_DATA_TYPE';
 
-ALTER TABLE 'TABLE_NAME' 
-DROP COLUMN 'COL_NAME';
+ALTER TABLE 'TABLE_NAME'
+DROP_COLUMN 'COL_NAME';
 
-ALTER TABLE 'TABLE_NAME' 
-RENAME TO 'NEW_TABLE_TYPE';
+ALTER TABLE 'TABLE_NAME'
+RENAME_TO_ 'NEW_TABLE_TYPE';
 ```
 
 <br>
@@ -118,10 +117,11 @@ ALTER TABLE 'TABLE_NAME' DROP PRIMARY KEY;
 <br>
 
 ### <u>DEFAULT</u>
-- 설정해주지 않은 값에 설정한 `기본 값`을 저장해주는 명령입니다. 
 
 > DEFAULT 값이 있다고 그것이 NULL이 아니라고는 할 수 없습니다. INSERT로 NULL값을 따로 넣어줄 수 있기 때문입니다.
 {: .prompt-warning }
+
+- 설정해주지 않은 값에 설정한 `기본 값`을 저장해주는 명령입니다. 
 
 > Preview :
 > ```sql
@@ -235,6 +235,8 @@ DELETE FROM 'TABLE_NAME' WHERE 'COND';
 
 <br>
 <br>
+
+---
 
 ## Reference
 - [MySQL Reference Manual](https://dev.mysql.com/doc/refman/8.4/en/) <sup>site</sup>

@@ -49,7 +49,7 @@ _Markdown in VSCode_
 {: .prompt-warning }
 
 ### <u>제목(Header)</u>
-- Markdown에서 **제목**을 표현하는 방법입니다. 
+- Markdown에서 제목을 표현하는 방법입니다. 
 - `<H1>` 부터 `<H6>` 까지 나타낼 수 있습니다.
 - H1은 `===` 로도 만들 수 있습니다.
 - H2는 `---` 로도 만들 수 있습니다.

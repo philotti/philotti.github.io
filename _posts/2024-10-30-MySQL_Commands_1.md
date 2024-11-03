@@ -32,7 +32,7 @@ image:
 - 데이터베이스에서 행을 `추가` 하는 명령을 의미합니다.
 
 ```sql
-INSERT 테이블명 INTO (열1, 열2 ....) VALUES (값1, 값2 ....);
+INSERT 테이블명 INTO (COL1, COL2 ....) VALUES (VAL1, VAL2 ....);
 ```
 
 > Preview :
@@ -45,14 +45,15 @@ INSERT 테이블명 INTO (열1, 열2 ....) VALUES (값1, 값2 ....);
 ### <u>READ</u>
 - 데이터베이스에서 행을 `조회` , `선택` 하는 명령을 의미합니다.
 - 테이블에서 모든 데이터를 페치하거나 `WHERE` 조건문을 사용하여 선택한 조건을 기준으로 조회할 수 있습니다.
-- `AS` 를 사용해 결과의 열에 Alias를 설정할 수 있습니다. 테이블의 열 이름을 실제로 변경하는 것은 아닙니다.
+- 모든열이나 특정열을 조회하거나 `WHERE` 명령을 이용하여 조건 조회를 할 수 있습니다.
+- `AS` 를 사용해 결과의 열에 별명을 설정할 수 있습니다. **테이블의 열 이름을 실제로 변경하는 것은 아닙니다.**
 
 ```sql
-SELECT * FROM 테이블명; # 모든열 조회
-SELECT 열 FROM 테이블명; # 특정열 조회
-SELECT 열1, 열2 ... FROM 테이블명; # 특정열들 조회
-SELECT * FROM 테이블명 WHERE 조건; # WHERE문을 이용한 조건 조회
-SELECT 열 AS 별명 이름 FROM 테이블명; # AS로 별명추가
+SELECT * FROM TABLE_NAME; 
+SELECT COL FROM TABLE_NAME; 
+SELECT COL1, COL2 ... FROM TABLE_NAME;
+SELECT * FROM TABLE_NAME WHERE COND;  
+SELECT COL AS ALIAS FROM TABLE_NAME; 
 ```
 
 > Preview : 
@@ -71,7 +72,7 @@ SELECT 열 AS 별명 이름 FROM 테이블명; # AS로 별명추가
 - UPDATE는 때론 큰 `실수` 를 범하게 될 수도 있으므로 먼저 `SELECT - WHERE` 명령을 이용해서 업데이트 대상을 먼저 조회한 후 UPDATE를 실행하는 편을 추천합니다.
 
 ```sql
-UPDATE 열 SET 변경값 WHERE 조건;
+UPDATE COL SET VAL WHERE COND;
 ```
 
 > Preview : 
@@ -86,12 +87,13 @@ UPDATE 열 SET 변경값 WHERE 조건;
 {: .prompt-tip }
 
 - 데이터베이스에서 행을 `삭제` 하는 명령을 의미합니다.
-- 테이블에서 모든 레코드나 특정 레코드를 제거할 수 있습니다. 후자의 경우 `WHERE` 절에서 제거할 행을 지정할 수 있습니다.
-- 위의 UPDATE처럼 큰 `실수` 를 범하게 될 수도 있으므로 `SELECT - WHERE`을 이용해서 DELETE 대상을 먼저 조회한 후 DELETE를 실행하는 편을 추천합니다.
+- 테이블에서 모든 레코드나 특정 레코드를 제거할 수 있습니다. 후자의 경우 `WHERE` 명령으로 제거할 행을 지정할 수 있습니다.
+- 위의 UPDATE처럼 큰 `실수` 를 범하게 될 수도 있으므로 `SELECT - WHERE` 명령을 이용해서 DELETE 대상을 먼저 조회한 후 DELETE를 실행하는 편을 추천합니다.
+- 아래와 같이 모든열을 삭제하거나 , `WHERE` 명령을 이용하여 조건 삭제를 할 수 있습니다.
 
 ```sql
-DELETE FROM 테이블명; # 모든열 삭제
-DELETE FROM 테이블명 WHERE 조건; # WHERE문을 이용한 조건 삭제
+DELETE FROM TABLE_NAME; 
+DELETE FROM TABLE_NAME WHERE COND; 
 ```
 
 > Preview : 

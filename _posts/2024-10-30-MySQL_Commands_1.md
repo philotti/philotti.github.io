@@ -26,8 +26,6 @@ SQL은 `Structured Query Language` 의 줄임말이고, 한국어로는 `구조�
 > 이 포스트에서 작성된 데이터베이스는 제가 임의로 만든 cats 데이터베이스입니다. 또한 저는 MySQL Workbench와 맥의 터미널을 이용하였습니다.
 {: .prompt-warning }
 
-<br>
-
 ![MySQL Workbench](/assets/post_img/2024-10-30-1.webp){: width="800"}
 _Using By MySQL Workbench_
 

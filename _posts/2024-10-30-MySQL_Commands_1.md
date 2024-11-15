@@ -13,6 +13,9 @@ published: true
 image:
   path: /assets/post_img/sql_logo.webp
   alt: MySQL
+  sitemap:
+  changefreq: daily
+  priority: 1.0
 ---
 
 > MySQL 기본 명령들과 CRUD 명령들을 정리한 글입니다. 

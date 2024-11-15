@@ -12,6 +12,9 @@ pin: false
 image:
   path: /assets/post_img/markdown_logo.jpg
   alt: Markdown
+sitemap:
+  changefreq: daily
+  priority: 1.0
 ---
 
 > Markdown 문법에 대해 정리한 글입니다. ~~사실 제가 보려고 정리한 글입니다.~~ 

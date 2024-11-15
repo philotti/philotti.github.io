@@ -13,7 +13,7 @@ published: true
 image:
   path: /assets/post_img/sql_logo.webp
   alt: MySQL
-  sitemap:
+sitemap:
   changefreq: daily
   priority: 1.0
 ---

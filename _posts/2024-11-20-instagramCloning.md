@@ -5,7 +5,7 @@ date: 2024-11-20 12:34:00 +0900
 last_modified_at: 2024-11-28 17:40:00 +0900
 categories: [MySQL, Project]
 tags: [MySQL, Project]
-description: Instagram Batabase Cloning
+description: Instagram Database Cloning
 toc: true 
 math: true
 pin: false

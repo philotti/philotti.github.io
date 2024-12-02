@@ -12,7 +12,7 @@ pin: false
 published: true
 image:
   path: /assets/post_img/2024-11-20/instagram banner.webp
-  alt: MySQL
+  alt: Instagram Cloning
 ---
 
 > 인스타그램 데이터베이스가 정보를 저장하는 방법에 대해 간단히 알아보고 앞으로 확장하는데 더 유리한 설계나, 다양한 설계들의 성능까지 알아보도록 하겠습니다. 

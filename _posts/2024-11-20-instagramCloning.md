@@ -1,5 +1,5 @@
 ---
-title: "Instagram Database Clone | 인스타그램 데이터베이스 클로닝"
+title: "Instagram Database Cloning | 인스타그램 데이터베이스 클로닝"
 author: 'jinjehr'
 date: 2024-11-20 12:34:00 +0900
 last_modified_at: 2024-11-28 17:40:00 +0900

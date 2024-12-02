@@ -11,7 +11,7 @@ math: true
 pin: false
 published: true
 image:
-  path: /assets/post_img/sql_logo.webp
+  path: /assets/post_img/2024-11-20/instagram banner.webp
   alt: MySQL
 ---
 
@@ -32,8 +32,6 @@ image:
 - 게시물에 대한 `댓글` 또한 저장해야 합니다.
 - `팔로워`와 `팔로우`도 저장할 것입니다. 그렇다면 어떤 관계로 저장해야 할까요? 우린 가장 일방적인 관계로 저장할 것입니다. 인스타그램은 누군가를 팔로우 한다고 해서 상대도 자신을 팔로우하지 않아도 됩니다.
 
-<br>
-
 ---
 
 ## **Instagram Schema**
@@ -41,7 +39,7 @@ image:
 
 <br>
 
-### <u>**Users Table**</u>
+### **<u>Users Table</u>**
 
 ```sql
 CREATE TABLE users ( 
@@ -60,7 +58,7 @@ CREATE TABLE users (
 
 <br>
 
-### <u>**Photos Table**</u>
+### **<u>Photos Table</u>**
 
 ```sql
 CREATE TABLE photos (
@@ -78,7 +76,7 @@ CREATE TABLE photos (
 
 <br>
 
-### <u>**Comments Table**</u>
+### **<u>Comments Table</u>**
 
 ```sql
 CREATE TABLE comments (
@@ -97,7 +95,7 @@ CREATE TABLE comments (
 
 <br>
 
-### <u>**Likes Table**</u>
+### **<u>Likes Table</u>**
 
 ```sql
 CREATE TABLE likes (
@@ -118,7 +116,7 @@ CREATE TABLE likes (
 
 <br>
 
-### <u>**Follows Table**</u>
+### **<u>Follows Table</u>**
 
 ```sql
 CREATE TABLE follows (
@@ -138,7 +136,7 @@ CREATE TABLE follows (
 
 <br>
 
-### <u>**Hashtag Tables**</u>
+### **<u>Hashtag Tables</u>**
 
 ```sql
 CREATE TABLE tags (
@@ -190,12 +188,12 @@ CREATE TABLE photo_tags (
 - **장점** :
   - 2번 솔루션처럼 **태그 숫자에 제한이 없으며** 사용된 시간이나 장소에 대한 정보 등과 같은 **추가 정보도 저장이 가능합니다.** 또, **태그 중복이 줄어든다**는 장점도 있습니다.
 - **단점** : 
-  - **처리할것들이 몇개 늘어난다**는 점이 존재합니다. ~~예로 처음에 해시태그를 삽입할 때 데이터베이스가 없으므로 생성 후 photo_tags 테이블의 사진과 관계시켜야하는 정도..~~또, **부모관계를 고려해야한다**는 점도 존재합니다. 특히, **태그를 삭제시에 연관된 테이블이 하나 더 있으므로 주의해야 합니다.**
+  - **처리할것들이 몇개 늘어난다**는 점이 존재합니다. ~~예로 처음에 해시태그를 삽입할 때 데이터베이스가 없으므로 생성 후 photo_tags 테이블의 사진과 관계시켜야하는 정도..~~ 또, **부모관계를 고려해야한다**는 점도 존재합니다. 특히, **태그를 삭제시에 연관된 테이블이 하나 더 있으므로 주의해야 합니다.**
 
 <br>
 
 #### **Best Hashtag Solution**
-- [TagSystem](https://archive.md/7P4uT)에서 분석한 내용을 확인해보면 데이터가 많은 대형 앱은 1번과 3번을 같이 사용하는 편이 좋습니다. 각자 다른 상황에서 최고의 성능을 보여주기 때문입니다. 또, 자주 사용되는 태그로 작업시에는 3번 방법이 빠르지만 자주 사용되지 않는 태그로 작업시에는 3번 방법이 가장 느리고 1번 방법이 가장 빠릅니다. 즉, 위와 같은 이유로 **혼합사용**을 권장한다는 결론에 도달할 수 있습니다.
+- [TagSystem](https://archive.md/7P4uT)에서 분석한 내용을 확인해보면 데이터가 많은 대형 앱은 `1번`과 `3번`을 같이 사용하는 편이 좋습니다. 각자 다른 상황에서 최고의 성능을 보여주기 때문입니다. 또, 자주 사용되는 태그로 작업시에는 3번 방법이 빠르지만 자주 사용되지 않는 태그로 작업시에는 3번 방법이 가장 느리고 1번 방법이 가장 빠릅니다. 즉, 위와 같은 이유로 `혼합사용`을 권장한다는 결론에 도달할 수 있습니다.
 
 <br>
 
@@ -218,6 +216,9 @@ SELECT * FROM users
 ORDER BY created_at 
 LIMIT 5;
 ```
+
+![Example 1](assets/post_img/2024-11-20/Example 1.png){: width="800"}
+_가장 초기에 가입한 유저 5명 찾기_
 
 <br>
 

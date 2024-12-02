@@ -1,5 +1,5 @@
 ---
-title: "Instagram Database Cloning | 인스타그램 데이터베이스 클로닝"
+title: "Instagram Database Clone | 인스타그램 데이터베이스 클로닝"
 author: 'jinjehr'
 date: 2024-11-20 12:34:00 +0900
 last_modified_at: 2024-11-28 17:40:00 +0900
@@ -197,7 +197,7 @@ CREATE TABLE photo_tags (
 
 <br>
 
-### <u>**Examples Using Databases**</u>
+### **<u>Examples Using Databases</u>**
 
 > 본 포스트에 사용된 데이터베이스는 `ig-cloning` 이라는 배포된 인스타그램 데이터베이스 클로닝용 데이터베이스를 사용하였습니다. 필자의 개발환경은 앞서 말한 것과 같이 MySQL Workbench와 Terminal을 사용하였습니다.
 {: .prompt-warning }
@@ -217,7 +217,7 @@ ORDER BY created_at
 LIMIT 5;
 ```
 
-![Example 1](assets/post_img/2024-11-20/Example 1.png){: width="800"}
+![Example 1](assets/post_img/2024-11-20/Example 1.png){: width="600"}
 _가장 초기에 가입한 유저 5명 찾기_
 
 <br>
@@ -234,6 +234,10 @@ GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
+![Example 2](assets/post_img/2024-11-20/Example 2.png){: width="600"}
+_가장 가입을 많이 한 요일 찾기_
+
+
 <br>
 
 #### **Example 3 : 게시물을 올리지 않은 비활성 유저 찾기**
@@ -249,6 +253,9 @@ FROM
 WHERE
     P.image_url IS NULL;
 ```
+
+![Example 3](assets/post_img/2024-11-20/Example 3.png){: width="600"}
+_게시물을 올리지 않은 비활성 유저 찾기_
 
 <br>
 
@@ -273,6 +280,9 @@ ORDER BY 5 DESC
 LIMIT 10;
 ```
 
+![Example 4](assets/post_img/2024-11-20/Example 4.png){: width="600"}
+_좋아요가 많은 10개의 게시물과 함께 그 정보 찾기_
+
 <br>
 
 #### **Example 5 : 모든 유저에 대한 평균 데이터 구하기**
@@ -285,6 +295,9 @@ SELECT (SELECT COUNT(*) FROM likes) / (SELECT COUNT(*) FROM users) AS avg_of_all
 
 SELECT (SELECT COUNT(*) FROM comments) / (SELECT COUNT(*) FROM users) AS avg_of_all_comments;
 ```
+
+![Example 5](assets/post_img/2024-11-20/Example 5.png){: width="600"}
+_모든 유저에 대한 평균 데이터 구하기_
 
 <br>
 
@@ -302,6 +315,9 @@ GROUP BY T.id
 ORDER BY the_most_famous_tags DESC
 LIMIT 10;
 ```
+
+![Example 6](assets/post_img/2024-11-20/Example 6.png){: width="600"}
+_상위 검색된 10개의 해시태그 찾기_
 
 <br>
 
@@ -321,6 +337,9 @@ HAVING num_likes = (SELECT
     FROM
         photos);
 ```
+
+![Example 7](assets/post_img/2024-11-20/Example 7.png){: width="600"}
+_게시물은 없지만 좋아요와 댓글은 존재하는 계정 찾기_
 
 <br>
 

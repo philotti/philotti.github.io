@@ -32,6 +32,8 @@ This is jinphil Choi, who are learning **DB, Security etc.** in university
 
 ### <u>Study History</u>
 - [x] Goethe-Zertifikat A1 <sup>certificate</sup>
-- [x] The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert<sup>udemy</sup>
-- [ ] Goethe-Zertifikat A2 <sup>certificate</sup>
-<br>
+- [ ] Mastering Data Structures & Algorithms using C and C++ <sup>udemy</sup>
+- [x] [The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert](https://www.udemy.com/certificate/UC-daf949bb-85ad-4f88-860d-bd0de6027a4b/) <sup>udemy</sup>
+- [x] Goethe-Zertifikat A2 <sup>certificate</sup>
+- [ ] Web security: Injection Attacks with Java & Spring Boot <sup>udemy</sup>
+- [ ] Goethe-Zertifikat B1 <sup>certificate</sup>

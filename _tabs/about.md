@@ -16,7 +16,7 @@ toc: true
 - 이 블로그 또한 계속해서 업데이트할 예정입니다. 지켜봐 주시면 감사하겠습니다. :)
 
 👋 Welcome to my blog! <br>
-This is jinphil Choi, who are learning **Development and Security** in university
+This is jinphil Choi, who are learning **Programming and Security** in university
 
 - I start this blog to record my study history and share what I have learned.
 - I can speak Korean, English, Deutsch(maybe?🧐)

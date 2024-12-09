@@ -1,18 +1,18 @@
 ---
-title: "Instagram Database Cloning | 인스타그램 데이터베이스 클로닝"
+title: "Instagram Database Clone | 인스타그램 데이터베이스 클론"
 author: 'jinjehr'
 date: 2024-11-20 12:34:00 +0900
 last_modified_at: 2024-11-28 17:40:00 +0900
 categories: [MySQL, Programming]
 tags: [MySQL, Programming]
-description: Instagram Database Cloning
+description: Instagram Database Clone
 toc: true 
 math: true
 pin: false
 published: true
 image:
   path: /assets/post_img/2024-11-20/instagram banner.webp
-  alt: Instagram Database Cloning
+  alt: Instagram Database Clone
 ---
 
 > 인스타그램 데이터베이스가 정보를 저장하는 방법에 대해 간단히 알아보고 앞으로 확장하는데 더 유리한 설계나, 다양한 설계들의 성능까지 알아보도록 하겠습니다. 

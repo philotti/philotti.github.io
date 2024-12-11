@@ -11,7 +11,7 @@ math: true
 pin: false
 published: true
 image:
-  path: /assets/post_img/2024-11-20/instagram banner.webp
+  path: /assets/post_img/2024-11-20/instagram_banner.webp
   alt: Instagram Database Clone
 ---
 

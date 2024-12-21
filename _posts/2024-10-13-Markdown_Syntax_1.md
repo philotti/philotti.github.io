@@ -1,6 +1,6 @@
 ---
 title: "Markdown Syntax | 마크다운 문법"
-author: 'jinjehr'
+author: 'philotti'
 date: 2024-10-13 23:51:00 +0900
 last_modified_at: 2024-10-17 12:51:00 +0900
 categories: [Markdown, Syntax]

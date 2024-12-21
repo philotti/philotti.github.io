@@ -1,6 +1,6 @@
 ---
 title: "MySQL #1 | 기본 명령에서 CRUD까지"
-author: 'jinjehr'
+author: 'philotti'
 date: 2024-10-30 20:09:00 +0900
 last_modified_at: 2024-11-03 21:54:00 +0900
 categories: [MySQL, Commands]

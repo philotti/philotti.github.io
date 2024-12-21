@@ -58,8 +58,8 @@ webmaster_verifications:
 
 # Web Analytics Settings
 analytics:
-  google:
-    id: 
+  google: 
+    id: G-95W37NSYWY
   goatcounter:
     id: philotti
   umami:

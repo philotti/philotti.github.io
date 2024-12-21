@@ -6,7 +6,7 @@ comments: false
 toc: true
 ---
 
-## [**최진필 | jinphil Choi**](https://github.com/jinjehr)     
+## [**최진필 | jinphil Choi**](https://github.com/philotti)     
 
 👋 안녕하세요, 최진필입니다.      
 **개발과 정보보안** 등을 공부하고 있는 대학생입니다. 

@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://philotti.github.io"
 
 github:
-  username: jinjehr # change to your GitHub username
+  username: philotti # change to your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -59,7 +59,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-MXN3ZN745J
+    id: 
   goatcounter:
     id: philotti
   umami:

@@ -417,7 +417,7 @@ C4|C5|C6
 ```markdown
 [![설명](이미지 링크)](https:// ~~ "링크 설명")
 
-[![Philog](/favicon.ico)](https://jinjehr.github.io/)
+[![Philog](/favicon.ico)](https://philotti.github.io/)
 ```
 
 <br>

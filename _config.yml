@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: PhiLog # the main title
 
-tagline: Jinphil_Choi's Page <br> since 2024~ # it will display as the subtitle
+tagline: Jinphil_Choi's Page <br> since 2024- # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A page that records my programming history :)

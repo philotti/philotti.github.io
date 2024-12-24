@@ -162,7 +162,7 @@ CREATE TABLE photo_tags (
 <br>
 
 #### **Hashtag Solution 1 : Create tags column in photos table**
-- Photos 테이블에 VARCHAR 문자열로 태그를 저장하고 `#` 으로 태그를 구분해 저장하는 방법입니다.
+- Photos 테이블에 VARCHAR 문자열로 태그를 저장하고 `#`으로 태그를 구분해 저장하는 방법입니다.
 - **장점** : 
   - 별도의 테이블을 생성안해도 되므로 **구현이 쉽습니다.**
 - **단점** : 

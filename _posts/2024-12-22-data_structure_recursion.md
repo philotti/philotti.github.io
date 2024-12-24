@@ -1,17 +1,17 @@
 ---
-title: "Data Structure : Recursion | 재귀"
+title: "(작성중)Data Structure : Recursion | 재귀"
 author: 'philotti'
 date: 2024-12-13 12:39:00 +0900
 last_modified_at: 2024-12-14 17:40:00 +0900
-categories: [MySQL, Programming]
-tags: [MySQL, Programming]
+categories: [Data Structure, Recursion]
+tags: [Data Structure, Recursion, C++]
 description: Recursion
 toc: true 
 math: true
 pin: false
 published: true
 image:
-  path: /assets/post_img/2024-11-20/instagram_banner.webp
+  path: /assets/post_img/2024-12-13/recursion_logo.webp
   alt: Recursion
 ---
 
@@ -114,9 +114,6 @@ int main()
 ```
 > Preview : 3 2 1 1 2 1 1
 
-![tree recursion](assets/post_img/2024-12-13/tree_recursion.png){: width="800"}
-_tree recursion_
-
 - 위의 시간복잡도는 O(2^n)이고, 프로그램 실행에 얼마나 많은 메모리가 필요한지를 뜻하는 공간 복잡도는 O(n)입니다.
 
 <br>
@@ -154,8 +151,6 @@ int main()
 }
 ```
 > Preview : 20 19 9 8 4 3 1 
-![indirect recursion](assets/post_img/2024-12-13/indirect_recursion.png){: width="800"}
-_indirect recursion_
 
 <br>
 

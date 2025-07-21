@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://philotti.github.io/sitemap.xml
-#DaumWebMasterTool:583abd91c3974fc914d0f23e81ea349e9abf6bbae2147a0ec31a8ddd350a5ed7:erOVGSH+k4Kp3TELYldlQg==
+#DaumWebMasterTool:a1d6e456e5177f50a58ccb6cdec9be1b61b71e6e1f15f2f60a2ea74661f91081:+0Z3l8EPxkFEgGflc/4/fQ==

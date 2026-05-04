@@ -82,3 +82,8 @@
   var(--prompt-danger-bg)
 );
 }
+
+/* background image path setup */
+body {
+  background-image: url('/assets/img/background.jpeg');
+}

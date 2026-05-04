@@ -84,6 +84,9 @@
 }
 
 /* background image path setup */
-body {
+#sidebar {
   background-image: url('/assets/img/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

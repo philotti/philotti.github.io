@@ -5,7 +5,8 @@ order: 4
 comments: false
 toc: true
 ---
-```
+
+<!--
 ## [**최진필 | jinphil Choi**](https://github.com/philotti)     
 
 👋 안녕하세요, 최진필입니다.      
@@ -37,4 +38,4 @@ This is jinphil Choi, who are learning **Programming and Security** in universit
 - [x] Goethe-Zertifikat A2 <sup>certificate</sup>
 - [ ] Web security: Injection Attacks with Java & Spring Boot <sup>udemy</sup>
 - [ ] Goethe-Zertifikat B1 <sup>certificate</sup>
-```
+-->

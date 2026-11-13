@@ -9,7 +9,7 @@ description: Instagram Database Clone
 toc: true 
 math: true
 pin: false
-published: true
+published: false
 image:
   path: /assets/post_img/2024-11-20/instagram_banner.webp
   alt: Instagram Database Clone
